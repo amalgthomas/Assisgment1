@@ -1,0 +1,74 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "keyVaultName": {
+      "value": "name your keyvault"
+    },
+    "objectId": {
+      "value": "Object ID from ADuser"
+    },
+    "secretsObject": {
+      "value": {
+        "secrets": [
+          {
+            "secretName": "psrconsumerGrpName",
+            "secretValue": "cntnr-2.0.0"
+          },
+          {
+            "secretName": "psreventHubnamespace",
+            "secretValue": "dataq-ts-eh-psr"
+          },
+          {
+            "secretName": "psrSASName",
+            "secretValue": "ListenPolicy"
+          },
+          {
+            "secretName": "psrSASKey",
+            "secretValue": "null"
+          },
+          {
+            "secretName": "storageAccountName",
+            "secretValue": "dataqtssa"
+          },
+          {
+            "secretName": "null",
+            "secretValue": "dataqjava"
+          },
+          {
+            "secretName": "rawSamplesEventHubName",
+            "secretValue": "timeseries-eh-rawsample"
+          },
+          {
+            "secretName": "rawSamplesEventHubnamespace",
+            "secretValue": "dataq-ts-eh-rawsamples"
+          },
+          {
+            "secretName": "rawSamplesSASName",
+            "secretValue": "SendPolicy"
+          },
+          {
+            "secretName": "rawSamplesSASKey",
+            "secretValue": "null"
+          },
+          {
+            "secretName": "psrStatusEventHubName",
+            "secretValue": "timeseries-eh-psrstatus"
+          },
+          {
+            "secretName": "psrStatusEventHubnamespace",
+            "secretValue": "dataq-ts-eh-status"
+          },
+          {
+            "secretName": "psrStatusSASName",
+            "secretValue": "SendPolicy"
+          },
+          {
+            "secretName": "psrStatusSASKey",
+            "secretValue": "null"
+          }
+        ]
+      }
+    }
+  }
+}
